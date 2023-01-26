@@ -1786,7 +1786,7 @@ body {
 
 .promo {
   background-color: #E7E5F9;
-  padding: 40px 20px;
+  padding: 100px 20px;
 }
 .promo .img-heros {
   -webkit-clip-path: inset(5% 2% 15% 10% round 5% 5% 5% 5%);
@@ -1823,7 +1823,7 @@ body {
 }
 
 .paket {
-  padding: 40px 20px;
+  padding: 100px 20px;
 }
 .paket .button-51 {
   background-color: transparent;
@@ -1910,7 +1910,7 @@ body {
 }
 
 .soon {
-  padding: 10px 10px;
+  padding: 100px 10px;
 }
 .soon h3 {
   font-family: Poppins, Arial, Helvetica, sans-serif;
