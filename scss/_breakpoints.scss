@@ -11,7 +11,7 @@ $breakpins :(
     };
 }
 @mixin sm {
-    @media (min-width:map-get($breakpins,"sm")){
+    @media (max-width:map-get($breakpins,"sm")){
         @content
     };
 }
