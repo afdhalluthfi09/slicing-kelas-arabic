@@ -11,14 +11,28 @@
 </head>
 <body>
     <!-- navabar -->
-    <nav class="navbar bg-heros">
+    <nav class="navbar navbar-expand-lg bg-heros">
         <div class="container">
-          <a class="navbar-brand">
-            <img src="images/logo.png" alt="">
-          </a>
-          <div class="d-flex" role="search">
-            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Daftar</button>
-          </>
+          <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="muhadatasah.html">Muhadatasa</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="nahwusorof.html">Nahwu & Shorof</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="kelasanak.html">Kelas Anak</a>
+                </li>
+            </ul>
+            <div class="d-flex" role="search">
+                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Daftar</button>
+              </div>
+          </div>
         </div>
     </nav>
     <!-- hero -->
@@ -47,8 +61,12 @@
                 <div data-aos="fade-left" data-aos-duration="3000" class="contain-text">
                     <h3>Tentang Kelas Arabic</h3>
                     <ul>
-                        <li><img src="images/number.svg" alt=""> <p>Kursus Online Bahasa Arab ini terdiri dari 3 kelas : Kelas Nahwu Shorof, Kelas Muhadatsah</p></li>
-                        <li><img src="images/number2.svg" alt=""><p>Kelas Anak-anak (Arabic for Kids). Masing-masing kelas mempunyai metode belajar yang berbeda-beda. Kelas Nahwu Shorof belajarnya via video yang di share di grup Whatsapp kelas</p></li>
+                        <li><img src="images/number.svg" alt="">
+                            <p>Kursus Online Bahasa Arab ini terdiri dari 3 kelas : Kelas Nahwu Shorof, Kelas Muhadatsah</p>
+                        </li>
+                        <li><img src="images/number2.svg" alt="">
+                            <p>Kelas Anak-anak (Arabic for Kids). Masing-masing kelas mempunyai metode belajar yang berbeda-beda. Kelas Nahwu Shorof belajarnya via video yang di share di grup Whatsapp kelas</p>
+                        </li>
                         <li><img src="images/number3.svg" alt=""><p>Ada latihan soal dalam format Google Form.</p></li>
                         <li><img src="images/number4.svg" alt=""><p>Karena tanpa ada tatap muka, sehingga kelas nahwu shorof jam belajarnya fleksibel. Sedangkan kelas Muhadatsah, dan kela anak, menggunakan metode belajar tatap muka online via aplikasi Zoom.</p></li>
                     </ul>
