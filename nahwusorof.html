@@ -54,6 +54,7 @@
       </div>
     </div>
   </section>
+  <!-- ngajar -->
   <section class="section-system-ngajar mt-5" id="section-system-ngajar">
     <div class="container">
       <div class="contain-row">
@@ -203,6 +204,7 @@
       </div>
     </div>
   </section>
+  <!-- video -->
   <section class="section-video" id="section-video">
     <div class="video-intro">
       <iframe width="1240" height="600" src="https://www.youtube.com/embed/dinQIb4ZFXY" title="video"></iframe>
@@ -387,10 +389,114 @@
       </div>
     </div>
   </section>
+  <!-- modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Daftar Kelas Bahasa Arab</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form id="form-register">
+            <div class="modal-body">
+                <div class="sk-card">
+                    Form Ini Akan Terhubung Dengan Admin Sekolahsill Untuk Melakuakn Pendaftaran Lebih Lanjut,Silhakan Mengisi Form Di bawah Ini
+                </div>
+
+            
+                <div class="row g-3 mt-3">
+                        <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Nama</label>
+                            <input type="text" class="form-control" id="inputNama" required>
+                        </div>
+                        <div class="col-md-6">
+                        <label for="inputPassword4" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail" required>
+                        </div>
+                </div>
+                <div class="row g-3 mt-3">
+                        <div class="col-md-6">
+                            <label for="inputEmail4" class="form-label">jenis kelamin</label>
+                            <select name="jenis_kelamin" id="jeniskelamin" class="form-control" required>
+                                <option value=""> -- pilih -- </option>
+                                <option value="laki_laki"> Laki-Laki </option>
+                                <option value="perempuan"> Perempuan </option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                        <label for="inputPassword4" class="form-label">Umur</label>
+                            <input type="text" class="form-control" id="inputUmur">
+                        </div>
+                </div>
+                <div class="row g-3 mt-3">
+                        <div class="col-md-12">
+                        <label for="inputPassword4" class="form-label">No Hp</label>
+                            <input type="text" class="form-control" id="inputHp">
+                        </div>
+                </div>
+                <div class="row g-3 mt-3">
+                        <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">kelas</label>
+                        <select name="kelas" id="kelas" class="form-control">
+                                <option> -- pilih -- </option>                   
+                                <option value="kelas_muhadatsah">Kelas Muhadatsah</option>
+                                <option value="kelas_nahwu_sorof">Kelas Nahwu Dan Sorof</option>
+                                <option value="kelas_muhadatsah">Kelas Anak</option>
+                        </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputPassword4" class="form-label">Jam</label>
+                            <select name="jam" id="jam" class="form-control">
+                                <option> -- pilih -- </option>
+                                <option value="20:00_21:00">20:00 - 21:00 (kelas muhadatsah)</option>
+                                <option value="20:00_21:00">19:00 - 20:00 (kelas anak)</option>
+                                <option value="fleksibel">20:00 - 21:00 (Kelas nahwi sorof)</option>
+                            </select>
+                        </div>
+                </div>
+
+                <div class="row g-3 mt-3">
+                        <div class="col-md-12">
+                        <label for="inputEmail4" class="form-label">Alamat</label>
+                        <textarea cols="6" rows="5" class="form-control" id="inputAlamat"></textarea>
+                        </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+            <button type="submit"  class="btn btn-primary">Daftar</button>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
+
+    const whatsappBtn = document.getElementById("whatsapp-btn");
+    let form =document.getElementById('form-register');
+    let inputNama =document.getElementById('inputNama');
+    let inputEmail =document.getElementById('inputEmail');
+    let jeniskelamin =document.getElementById('jeniskelamin');
+    let inputUmur =document.getElementById('inputUmur');
+    let inputHp =document.getElementById('inputHp');
+    let kelas =document.getElementById('kelas');
+    let jam =document.getElementById('jam');
+    let inputAlamat =document.getElementById('inputAlamat');
+    form.addEventListener('submit',(event)=>{
+      event.preventDefault();
+      const template = `Assalamu alaikum wa rahmathullahi wa barakthu, 
+saya : ${inputNama.value},
+jenis kelamin : ${jeniskelamin.value},
+umur : ${inputUmur.value}th,
+alamat: ${inputAlamat.value},
+ingin mendaftar kelas tahsin ${kelas.value},
+dengan jam ${jam.value}`;
+      const url = `https://api.whatsapp.com/send?phone=6281818182171&text=${encodeURIComponent(template)}`;
+      window.location.href=url
+    })
   </script>
 </body>
 

@@ -330,16 +330,15 @@
       form.addEventListener('submit',(event)=>{
         event.preventDefault();
         const template = `Assalamu alaikum wa rahmathullahi wa barakthu, 
-                    saya ${inputNama.value} 
-                    jenis kelamin ${jeniskelamin.value} 
-                    umur ${inputUmur.value}th,
-                    alamat: ${inputAlamat.value},
-                    ingin mendaftar kelas tahsin ${kelas.value}
-                    dengan jam ${jam.value}`;
-        const url = `https://api.whatsapp.com/send?phone=6285643287040&text=${encodeURIComponent(template)}`;
+saya : ${inputNama.value},
+jenis kelamin : ${jeniskelamin.value},
+umur : ${inputUmur.value}th,
+alamat: ${inputAlamat.value},
+ingin mendaftar kelas tahsin ${kelas.value},
+dengan jam ${jam.value}`;
+        const url = `https://api.whatsapp.com/send?phone=6281818182171&text=${encodeURIComponent(template)}`;
         window.location.href=url
       })
-
     </script>
 </body>
 </html>
