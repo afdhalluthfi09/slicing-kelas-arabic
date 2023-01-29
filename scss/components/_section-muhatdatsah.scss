@@ -1,11 +1,12 @@
 .section-heros-muhadatsah{
     .contain-row{
         display: flex;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         .contain-text{
             h3{
-                font-family: Poppins;
+                font-family: Poppins,Arial, Helvetica, sans-serif;
                 font-style: normal;
                 font-weight: 700;
                 font-size: 50px;
@@ -19,7 +20,7 @@
                 padding: padding 10px 12px;
                 border-left: 5px solid #FB8351;
                 p{
-                    font-family: Poppins;
+                    font-family: Poppins,Arial, Helvetica, sans-serif;
                     font-style: normal;
                     font-weight: 500;
                     font-size: 16px;
@@ -90,6 +91,17 @@
                 }
             }
         }
+        @include sm{
+            flex-direction: column-reverse;
+            .contain-image{
+                margin: auto;
+                width: 480px;
+                img{
+                    padding: auto;
+                    width: 380px;
+                }
+            }
+        }
     }
 }
 .section-system-ngajar{
@@ -111,7 +123,7 @@
         .contain-text{
             padding: 10px;
             h3{
-                font-family: Poppins;
+                font-family: Poppins,Arial, Helvetica, sans-serif;
                 font-style: normal;
                 font-weight: 600;
                 font-size: 32px;
@@ -121,7 +133,7 @@
             }
             ul{
                 li{
-                    font-family: Poppins;
+                    font-family: Poppins,Arial, Helvetica, sans-serif;
                     font-style: normal;
                     font-weight: 500;
                     font-size: 16px;
@@ -131,6 +143,17 @@
                 }
             }
             
+        }
+        @include sm{
+            flex-direction: column;
+            .contain-image{
+                margin: auto;
+                width: 480px;
+                img{
+                    padding: auto;
+                    width: 380px;
+                }
+            }
         }
     }
 }
@@ -153,7 +176,7 @@
         .contain-text{
             padding: 10px;
             h3{
-                font-family: Poppins;
+                font-family: Poppins,Arial, Helvetica, sans-serif;
                 font-style: normal;
                 font-weight: 600;
                 font-size: 32px;
@@ -162,7 +185,7 @@
                 color: #333237;
             }
             p{
-                font-family: Poppins;
+                font-family: Poppins,Arial, Helvetica, sans-serif;
                 font-style: normal;
                 font-weight: 500;
                 font-size: 18px;
@@ -176,7 +199,7 @@
                 background: #FB8351;
                 border-radius: 6px;
                 margin-top: 200px;
-                font-family: Poppins;
+                font-family: Poppins,Arial, Helvetica, sans-serif;
                 font-style: normal;
                 font-weight: 500;
                 font-size: 16px;
@@ -184,6 +207,17 @@
                 align-items: center;
                 color: #FFFFFF;
 
+            }
+        }
+        @include sm{
+            flex-direction: column;
+            .contain-image{
+                margin: auto;
+                width: 480px;
+                img{
+                    padding: auto;
+                    width: 380px;
+                }
             }
         }
     }
@@ -206,7 +240,7 @@
                 background: rgba(251, 131, 81, 0.1);
                 border-radius: 4px;
 
-                font-family: Poppins;
+                font-family: Poppins,Arial, Helvetica, sans-serif;
                 font-style: normal;
                 font-weight: 500;
                 font-size: 16px;
@@ -215,13 +249,20 @@
                 color: #000000;
             }
             p{
-                font-family: Poppins;
+                font-family: Poppins,Arial, Helvetica, sans-serif;
                 font-style: normal;
                 font-weight: 500;
                 font-size: 16px;
                 color: #60697B;
                 margin-top: 5px;
 
+            }
+        }
+        @include sm{
+            justify-content: space-around;
+            gap: 8px;
+            .card{
+                width: 150px;
             }
         }
     }
@@ -236,6 +277,7 @@
         flex-direction: row;
         justify-content: center;
         iframe{
+            
             border-radius: 10px;
         }
     }
@@ -275,7 +317,7 @@
         justify-content: center;
         .card{
             h3{
-                font-family: Poppins;
+                font-family: Poppins,Arial, Helvetica, sans-serif;
                 font-style: normal;
                 font-weight: 700;
                 font-size: 50px;
@@ -285,6 +327,18 @@
                 color: #333237;
             }
             width: 800px;
+        }
+    }
+    @include sm{
+        .video-intro{
+            padding:30px 40px;
+            iframe{
+                height: 240px;
+                width: 100%;
+            }
+        }
+        .sk-quetsion{
+            padding: 0 20px;
         }
     }
 }

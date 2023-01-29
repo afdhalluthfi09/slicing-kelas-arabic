@@ -2046,11 +2046,12 @@ nav #navbarScroll ul li a {
 
 .section-heros-muhadatsah .contain-row {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 .section-heros-muhadatsah .contain-row .contain-text h3 {
-  font-family: Poppins;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 50px;
@@ -2065,7 +2066,7 @@ nav #navbarScroll ul li a {
   border-left: 5px solid #FB8351;
 }
 .section-heros-muhadatsah .contain-row .contain-text .line-pane p {
-  font-family: Poppins;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -2131,6 +2132,19 @@ nav #navbarScroll ul li a {
     padding: 12px 50px;
   }
 }
+@media (max-width: 480px) {
+  .section-heros-muhadatsah .contain-row {
+    flex-direction: column-reverse;
+  }
+  .section-heros-muhadatsah .contain-row .contain-image {
+    margin: auto;
+    width: 480px;
+  }
+  .section-heros-muhadatsah .contain-row .contain-image img {
+    padding: auto;
+    width: 380px;
+  }
+}
 
 .section-system-ngajar .contain-row {
   padding: 40px 40px;
@@ -2150,7 +2164,7 @@ nav #navbarScroll ul li a {
   padding: 10px;
 }
 .section-system-ngajar .contain-row .contain-text h3 {
-  font-family: Poppins;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
@@ -2159,13 +2173,26 @@ nav #navbarScroll ul li a {
   color: #333237;
 }
 .section-system-ngajar .contain-row .contain-text ul li {
-  font-family: Poppins;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 200%;
   text-transform: capitalize;
   color: #333237;
+}
+@media (max-width: 480px) {
+  .section-system-ngajar .contain-row {
+    flex-direction: column;
+  }
+  .section-system-ngajar .contain-row .contain-image {
+    margin: auto;
+    width: 480px;
+  }
+  .section-system-ngajar .contain-row .contain-image img {
+    padding: auto;
+    width: 380px;
+  }
 }
 
 .section-system-module .contain-row {
@@ -2186,7 +2213,7 @@ nav #navbarScroll ul li a {
   padding: 10px;
 }
 .section-system-module .contain-row .contain-text h3 {
-  font-family: Poppins;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
@@ -2195,7 +2222,7 @@ nav #navbarScroll ul li a {
   color: #333237;
 }
 .section-system-module .contain-row .contain-text p {
-  font-family: Poppins;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -2209,13 +2236,26 @@ nav #navbarScroll ul li a {
   background: #FB8351;
   border-radius: 6px;
   margin-top: 200px;
-  font-family: Poppins;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
   align-items: center;
   color: #FFFFFF;
+}
+@media (max-width: 480px) {
+  .section-system-module .contain-row {
+    flex-direction: column;
+  }
+  .section-system-module .contain-row .contain-image {
+    margin: auto;
+    width: 480px;
+  }
+  .section-system-module .contain-row .contain-image img {
+    padding: auto;
+    width: 380px;
+  }
 }
 
 .section-module-list .contain-row {
@@ -2236,7 +2276,7 @@ nav #navbarScroll ul li a {
   top: 0px;
   background: rgba(251, 131, 81, 0.1);
   border-radius: 4px;
-  font-family: Poppins;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -2245,12 +2285,21 @@ nav #navbarScroll ul li a {
   color: #000000;
 }
 .section-module-list .contain-row .card p {
-  font-family: Poppins;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   color: #60697B;
   margin-top: 5px;
+}
+@media (max-width: 480px) {
+  .section-module-list .contain-row {
+    justify-content: space-around;
+    gap: 8px;
+  }
+  .section-module-list .contain-row .card {
+    width: 150px;
+  }
 }
 
 .section-video {
@@ -2306,7 +2355,7 @@ nav #navbarScroll ul li a {
   width: 800px;
 }
 .section-video .sk-faq .card h3 {
-  font-family: Poppins;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 50px;
@@ -2314,6 +2363,18 @@ nav #navbarScroll ul li a {
   text-align: center;
   text-transform: capitalize;
   color: #333237;
+}
+@media (max-width: 480px) {
+  .section-video .video-intro {
+    padding: 30px 40px;
+  }
+  .section-video .video-intro iframe {
+    height: 240px;
+    width: 100%;
+  }
+  .section-video .sk-quetsion {
+    padding: 0 20px;
+  }
 }
 
 .sk-card {
